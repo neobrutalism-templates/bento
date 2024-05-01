@@ -7,3 +7,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100dvh;
+  @apply bg-bg;
+}
