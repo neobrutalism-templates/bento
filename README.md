@@ -1,17 +1,12 @@
-# NextJS starter template
+<img src="public/preview.png" />
 
-This template is for neobrutalism template creators (for this organization) who want to start building asap, without having to install and set everything from scratch.
+# Bento
 
-This template includes:
-
-- nextjs 14
-- tailwind (with default variables from [styling docs](https://neobrutalism-components.vercel.app/docs/styling))
-- eslint + prettier (with plugin for sorting tailwind classnames)
-- cn utility function
+Bento is a neobrutalism-styled nextjs tailwind template heavily insipired by bento.me.
 
 ## Get started
 
-Once you join this organization (message me on [twitter](https://x.com/samuelbreznjak), and I'll send you an invite) make a new repo in this organization by clicking the "Use this template" button on the top right.
+[Create a new repo](https://github.com/neobrutalism-templates/bento/generate) from this template.
 
 ### Installation
 
@@ -28,3 +23,30 @@ To run the app locally:
 ```bash
 pnpm run dev
 ```
+
+### Config
+
+- Inside `layout.tsx` update the metadata
+- Update the `favicon.ico` and `pfp.png` (profile picture)
+- Inside `page.tsx` update the content
+
+#### Links config
+
+Inside `links.ts` inside `LINKS` object, every property represents a link displayed on the home page. Leave only the links you wanna show.
+
+#### Link object
+
+```ts
+github: {
+  title: 'Github',
+  icon: github,
+  link: 'https://github.com/johndoe',
+  text: '@johndoe',
+},
+```
+
+`title` and `text` are being displayed on the link, `link` is self-explanatory, and `icon` is svg icon imported from `public/icons`. Do not touch `icon` unless you want to have different icons than the default ones.
+
+### Styling
+
+To change the styling visit [styling docs](https://neobrutalism-components.vercel.app/docs/styling), and copy the desired styling to tailwind config like it's shown in the styling docs.
