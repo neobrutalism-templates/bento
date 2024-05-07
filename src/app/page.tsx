@@ -5,7 +5,7 @@ export default function Home() {
     <div className="relative mx-auto h-full w-[700px] max-w-full p-8 md:p-16 xl:w-[1400px]">
       <div className="mb-12 w-full xl:fixed xl:mb-0 xl:w-[500px]">
         <img
-          className="h-28 w-28 rounded-full xl:h-[184px] xl:w-[184px]"
+          className="h-28 w-28 rounded-full border-2 border-black xl:h-[184px] xl:w-[184px]"
           src="/pfp.png"
           alt="profile picture"
         />
@@ -27,7 +27,7 @@ export default function Home() {
       <div className="justify-end xl:flex">
         <div
           id="grid-container"
-          className="w450:grid-cols-1 w450:gap-7 grid w-full grid-cols-2 gap-10 md:grid-cols-3 xl:w-1/2 xl:pb-16"
+          className="grid w-full grid-cols-2 gap-10 md:grid-cols-3 xl:w-1/2 xl:pb-16 w450:grid-cols-1 w450:gap-7"
         >
           {Object.keys(LINKS).map((key) => (
             <a
