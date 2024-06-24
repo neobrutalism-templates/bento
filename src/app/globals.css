@@ -10,7 +10,7 @@
 
 body {
   min-height: 100dvh;
-  @apply bg-bg;
+  @apply dark:bg-darkBg bg-bg;
 }
 
 body {
