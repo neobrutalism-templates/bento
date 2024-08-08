@@ -22,6 +22,7 @@ const config: Config = {
         darkBg: '#272933',
         darkText: '#eeefe9',
         darkBorder: '#000',
+        secondaryBlack: '#1b1b1b', // opposite of plain white, not used pitch black because borders and box-shadows are that color 
       },
       borderRadius: {
         base: '5px',
